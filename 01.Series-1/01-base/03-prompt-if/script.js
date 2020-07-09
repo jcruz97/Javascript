@@ -7,5 +7,12 @@
   console.log('Hello Woods programmer');
 
   // YOUR CODE HERE
+  var answerCake = prompt("Do you want some cake?\n Please answer Y/N ");
+
+  if (answerCake == "Y"){
+    alert("Glutony is a sin mf");
+  } else{
+    alert("More cake for me then :p");
+  }
 })();
 

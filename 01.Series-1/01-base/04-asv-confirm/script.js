@@ -7,4 +7,23 @@
     console.log('Hello Woods programmer');
 
     // YOUR CODE HERE
+    
+    var age = prompt("How old are you?");
+    var gender = prompt("Are you a male or a female");
+    var town = prompt("Where do you live?");
+
+
+    
+
+    alert("You are "+age+" years old, live in "+town+" and are a "+gender+".");
+
+
+
+    if(confirm("Please confirm the intel you gave ! ")){
+        txt = "Intel confirmed !";
+    } else{
+        txt = "You will access other pages after intel is confirmed !"
+        location.reload();
+    }
+
 })();
