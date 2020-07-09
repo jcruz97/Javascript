@@ -8,6 +8,13 @@
     document.getElementById("run").addEventListener("click", () => {
 
         // your code here
+       var numFac= document.getElementById("number").value;
+
+       for (var i = numFac-1; i>=1; i--){
+           numFac*=i;
+           alert(numFac);
+       }
+
 
     });
 

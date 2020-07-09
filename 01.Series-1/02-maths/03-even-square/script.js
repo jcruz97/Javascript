@@ -7,6 +7,13 @@
     document.getElementById("run").addEventListener("click", () => {
 
         // your code here
+        var n=21;
+
+        for (i=1;i<=n;i++){
+            
+            var sqrNumber = i**2;
+            alert("The square of "+i+" is : "+sqrNumber);
+    }
 
     });
 
