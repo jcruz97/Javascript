@@ -80,6 +80,17 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+
+        var finder = people.find(function(obj){
+            return obj.firstname === "Jean" && obj.lastname === "Dupont";
+        });
+
+        console.log(finder.email);
+        console.log(people.indexOf(finder));
+
+        
+
+    });
 
 })();

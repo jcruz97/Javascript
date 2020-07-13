@@ -80,6 +80,13 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+        
+        let adultArray = [];
+
+        people.forEach(obj => obj.age>18 && adultArray.push(obj));
+        adultArray.forEach(obj=> console.log(obj.firstname +" "+ obj.lastname +" / "+ obj.age));
+        
+    });
 
 })();
