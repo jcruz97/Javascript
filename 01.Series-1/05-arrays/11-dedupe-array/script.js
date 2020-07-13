@@ -20,6 +20,9 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () =>{
 
+        let reFruit = [...new Set(fruits)];
+        console.log(reFruit);
+   });
 })();
