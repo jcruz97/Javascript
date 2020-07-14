@@ -6,6 +6,12 @@
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    // your code here
+    let d = new Date();
+    let date =d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear();
+    let time =d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+
+    let fullDate = date +" "+time;
+
+    document.getElementById("target").innerHTML = fullDate;
 
 })();

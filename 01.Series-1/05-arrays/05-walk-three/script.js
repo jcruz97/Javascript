@@ -31,6 +31,9 @@
         },
     ];
 
-    // your code here
+    document.addEventListener("click" , () =>{
+        
+        people.forEach(obj=>console.log(obj.firstname +" "+obj.lastname));
+    });
 
 })();
