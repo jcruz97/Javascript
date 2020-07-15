@@ -3,6 +3,8 @@
 
 (() => {
 
-    // your code here
+    for(i=0;i<=4;i++){
+   document.getElementsByClassName("material")[0].getElementsByClassName("target")[i].innerHTML = "Owned";
+    }
 
 })();
