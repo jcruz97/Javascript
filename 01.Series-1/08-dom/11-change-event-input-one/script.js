@@ -3,6 +3,17 @@
 
 (() => {
 
-    // your code here
+    let pass = document.getElementById('pass-one');
+    let counter = document.getElementById('counter');
+
+    pass.addEventListener('input',checker);
+    counter.innerHTML = pass.value.length + "/10";
+
+    function checker (){
+        if (pass.value.length > 10) {
+            console.log("No!");
+        }
+    }
+    
 
 })();
