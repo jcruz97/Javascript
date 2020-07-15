@@ -3,9 +3,28 @@
 
 (() => {
     class Animal {
+
+        constructor(name){
+            this.name = name;
+        }
+
         sayHello() {
-            return `${this.constructor.greeting}! I'm ${this.name}!`;
+            return `${this.constructor.greeting}! Ich bin ${this.name}!`;
         }
     }
-    // your code here
+
+    class Cat extends Animal {
+        static greeting = "Miau";
+    }
+
+    class Dog extends Animal {
+        static greeting = "Wuf Wuf";
+    }
+
+    document.getElementById("run").addEventListener("click", ()=> {
+        doggo = new Dog("Helmar");
+        katse = new Cat("Bismarck");
+        console.log(doggo.sayHello());
+        console.log(katse.sayHello());
+    });
 })();
