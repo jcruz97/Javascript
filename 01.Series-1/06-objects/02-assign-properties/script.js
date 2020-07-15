@@ -18,5 +18,22 @@
         os: "linux",
         user: null,
     };
-    // your code here
+
+    function filler (computers){
+
+        if (computers.hasOwnProperty("available")==false){
+            computers.available = defaultProps.available;
+        } 
+        if (computers.hasOwnProperty("os")==false){
+            computers.os = defaultProps.os;
+        } 
+        if (computers.hasOwnProperty("user")==false){
+            computers.user = defaultProps.user;
+        }
+        console.log(computers);
+    }
+
+    document.getElementById("run").addEventListener("click", () =>{
+        computers.forEach(filler);
+    });
 })();
