@@ -3,17 +3,15 @@
 
 (() => {
 
-    let pass = document.getElementById('pass-one');
-    let counter = document.getElementById('counter');
+    let passOne = document.getElementById("pass-one");
+    let counter = document.getElementById("counter");
 
-    pass.addEventListener('input',checker);
-    counter.innerHTML = pass.value.length + "/10";
+    passOne.setAttribute("maxlength",10);
 
-    function checker (){
-        if (pass.value.length > 10) {
-            console.log("No!");
-        }
-    }
+    passOne.addEventListener("keyup", () => {
+
+        counter.innerText = `${passOne.value.length}/10`
+    })
     
 
 })();
