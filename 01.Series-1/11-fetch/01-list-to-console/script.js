@@ -2,5 +2,17 @@
 
 
 (() => {
-    // your code here
+
+    document.getElementById("run").addEventListener('click', () =>{
+
+        fetch("http://localhost:3000/heroes")
+        
+        .then (function(heroes){
+            return heroes.json();
+        })
+        .then (function (data) {
+            console.log(data);
+        })
+
+    });
 })();
