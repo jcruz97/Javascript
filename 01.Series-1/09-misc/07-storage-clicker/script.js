@@ -5,8 +5,8 @@
     
     target.innerHTML = localStorage.getItem("clicker");
     
-    
     let clicks = 0;
+    
     
 
     function count() {
