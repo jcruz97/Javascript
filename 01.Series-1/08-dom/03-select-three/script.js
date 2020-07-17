@@ -7,4 +7,5 @@
    document.getElementsByClassName("material")[0].getElementsByClassName("target")[i].innerHTML = "Owned";
     }
 
+
 })();

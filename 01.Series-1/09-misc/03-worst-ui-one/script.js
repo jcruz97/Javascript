@@ -3,6 +3,11 @@
 
 (() => {
 
-    // your code here
+    var phoneSlider = document.getElementById("slider").value;
+    var phoneNumber = document.getElementById("target");
+
+    document.getElementById("slider").addEventListener("change", () => {
+        phoneNumber.innerHTML =  "0"+ phoneSlider;
+    });
 
 })();
