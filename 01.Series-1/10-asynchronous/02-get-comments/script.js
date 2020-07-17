@@ -2,5 +2,17 @@
 
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        window.lib.getPosts((error, callback) => {
+
+            callback.forEach(post =>  {
+
+                window.lib.getComments(post.id,(error, comments) => { 
+                post.comments = comments;
+                });
+                
+            });
+            console.log(callback);
+        });
+    });
 })();
