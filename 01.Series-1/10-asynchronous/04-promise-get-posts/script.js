@@ -2,5 +2,11 @@
 
 
 (() => {
-    // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        window.lib.getPersons().then((posts) =>{
+            console.log(posts);
+        })
+    });
 })();

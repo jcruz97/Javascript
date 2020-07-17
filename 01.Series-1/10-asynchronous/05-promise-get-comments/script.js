@@ -2,5 +2,16 @@
 
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+
+        window.lib.getPosts().then((posts) =>{
+
+            posts.forEach(article => {
+                window.lib.getComments(article.id).then((comments) => {
+                    article.comments = comments;
+                });
+            })
+            console.log(posts);
+        })
+    });
 })();

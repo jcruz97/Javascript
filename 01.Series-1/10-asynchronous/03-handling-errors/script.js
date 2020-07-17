@@ -2,5 +2,14 @@
 
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        window.lib.getPersons((error, people) =>{
+            console.log("Please wait for the result !");
+            setTimeout(() =>{
+                if (error ===null) console.log(people);
+                else console.error(error);
+            } ,5000);
+            
+        })
+    });
 })();

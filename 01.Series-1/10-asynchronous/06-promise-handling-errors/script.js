@@ -2,5 +2,14 @@
 
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        window.lib.getPersons().then((people)=>{
+
+            console.log("Please wait for the result !");
+            console.log(people);
+            
+        }).catch((err) => {
+            console.error(err)
+        })
+    });
 })();
